@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081024"/>
+      <stop offset="100%" stop-color="#0e1a38"/>
+    </linearGradient>
+    <linearGradient id="barG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="lineG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="180" fill="url(#bgD)"/>
+
+  <!-- Chart Card Window -->
+  <rect x="40" y="15" width="240" height="150" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
+  <rect x="40" y="15" width="240" height="26" rx="10" fill="#1e293b"/>
+  <!-- Header -->
+  <circle cx="55" cy="28" r="4" fill="#38bdf8"/>
+  <text x="70" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7dd3fc" font-weight="600">Jupyter [Pandas / Matplotlib]</text>
+
+  <!-- Plot Area -->
+  <g transform="translate(65, 52)">
+    <!-- Grid Lines -->
+    <line x1="0" y1="20" x2="190" y2="20" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <line x1="0" y1="50" x2="190" y2="50" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <line x1="0" y1="80" x2="190" y2="80" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <line x1="0" y1="95" x2="190" y2="95" stroke="#64748b" stroke-width="1.5"/>
+
+    <!-- Bars -->
+    <rect x="15" y="45" width="18" height="50" rx="3" fill="url(#barG)"/>
+    <rect x="50" y="25" width="18" height="70" rx="3" fill="url(#barG)"/>
+    <rect x="85" y="10" width="18" height="85" rx="3" fill="#38bdf8"/>
+    <rect x="120" y="35" width="18" height="60" rx="3" fill="url(#barG)"/>
+    <rect x="155" y="18" width="18" height="77" rx="3" fill="url(#barG)"/>
+
+    <!-- Trend Line -->
+    <path d="M 24 55 Q 59 20 94 15 T 164 22" fill="none" stroke="url(#lineG)" stroke-width="2.5"/>
+    <circle cx="24" cy="55" r="3.5" fill="#10b981"/>
+    <circle cx="59" cy="28" r="3.5" fill="#38bdf8"/>
+    <circle cx="94" cy="15" r="4" fill="#ffffff" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="129" cy="40" r="3.5" fill="#38bdf8"/>
+    <circle cx="164" cy="22" r="3.5" fill="#10b981"/>
+  </g>
+</svg>
